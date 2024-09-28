@@ -1,0 +1,76 @@
+:root {
+    --primary-font: 'Raleway Thin', sans-serif;
+    /* Text colors */
+    --main-txt-cl: rgb(134, 146, 139);
+    --secondary-txt-cl: rgb(44, 45, 53);
+    --accent-txt-cl: rgb(89, 141, 102);
+    /* Bg colors */
+    --main-bg-cl: rgb(244, 246, 245);
+    /* Others */
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 150%;
+    color: var(--main-txt-cl);
+    background-color: var(--main-bg-cl);
+}
+
+/* Reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+Button {
+    Font-family: inherit;
+    Color: currentColor;
+    Cursor: pointer
+}
+
+
+
+/* Reset end */
+
+.container {
+    Width: 1110px;
+    Margin-left: auto;
+    Margin-right: auto;
+    /* Padding-left: 15px;
+    Padding-right: 15px;
+    Padding-left: 165px;
+    Padding-right: 165px; */
+
+
+    Outline: 2px solid red;
+    Outline-offset: -2px;
+}
