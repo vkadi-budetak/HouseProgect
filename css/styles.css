@@ -6,6 +6,8 @@
     --accent-txt-cl: rgb(89, 141, 102);
     /* Bg colors */
     --main-bg-cl: rgb(244, 246, 245);
+    --secondary-bg-cl: rgb(225, 237, 230);
+    --main-svg-cl: rgb(89, 141, 102);
     /* Others */
 
 }
@@ -62,15 +64,72 @@ Button {
 /* Reset end */
 
 .container {
-    Width: 1110px;
+    Width: 1140px;
     Margin-left: auto;
     Margin-right: auto;
-    /* Padding-left: 15px;
+    Padding-left: 15px;
     Padding-right: 15px;
-    Padding-left: 165px;
-    Padding-right: 165px; */
-
 
     Outline: 2px solid red;
     Outline-offset: -2px;
+}
+
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+
+.header {
+    background-color: var(--secondary-bg-cl);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.container {}
+
+.header-logo {}
+
+.header-logo-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+
+.header-logo-svg {
+    fill: var(--main-svg-cl);
+}
+
+.header-logo-txt {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: var(--main-svg-cl);
+}
+
+.header-nav {}
+
+.header-nav-list {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+
+.header-nav-item {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: var(--secondary-txt-cl);
+}
+
+.header-nav-link {}
+
+.header-nav-svg {
+    fill: var(--secondary-txt-cl);
 }
