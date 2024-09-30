@@ -299,3 +299,77 @@ Button {
     line-height: 1.2;
     color: var(--accent-txt-cl);
 }
+
+/**
+  |============================
+  | Promo styles
+  |============================
+*/
+.promo {
+    display: flex;
+    background-image: url(../images/promo/promo_fon.png);
+    background-repeat: no-repeat;
+    background-size: 1440px 574px;
+    background-position: center;
+}
+
+.promo::before {
+    content: '';
+    display: block;
+    width: 1004px;
+    /* height: 687px; */
+    filter: blur(315px);
+    background-color: rgba(13, 43, 67, 0.8);
+    
+    z-index: 1;
+}
+
+.promo-container {
+    height: 574px;
+}
+
+.promo-container-uppertitle {
+    display: flex;
+    gap: 20px;
+    padding: 70px 0 20px;
+}
+
+.promo-content {}
+
+.promo-svg {
+    fill: rgb(238, 219, 109);
+}
+
+.promo-title {
+    width: 421px;
+    height: 80px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 100%;
+}
+
+
+
+.promo-desc {
+    display: flex;
+    flex-wrap: wrap;
+    width: 540px;
+    height: 209px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 150%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 60px;
+}
+
+.promo-desc-part {}
+
+.promo-btn {
+    width: 252px;
+    height: 65px;
+    background-color: rgb(238, 219, 109);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: var(--secondary-txt-cl);
+}
