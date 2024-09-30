@@ -64,6 +64,10 @@ Button {
 
 /* Reset end */
 
+.section {
+    margin-bottom: 70px;
+}
+
 .container {
     Width: 1140px;
     Margin-left: auto;
@@ -308,34 +312,25 @@ Button {
 .promo {
     background-image: url(../images/promo/promo_fon.png);
     background-repeat: no-repeat;
-    background-size: 1440px 574px;
+    background-size: cover;
     background-position: center;
 }
 
-/* .promo::before {
-    content: '';
-    display: block;
-    width: 1004px;
-    height: 687px;
-    filter: blur(315px);
-    background-color: rgba(13, 43, 67, 0.8);
-    z-index: 1;
-} */
-
 .promo-container {
-    display: flex;
     height: 574px;
+    position: relative;
 }
 
 .promo-container::before {
     content: '';
     display: block;
-    width: 1004px;
-    /* height: 687px; */
     filter: blur(315px);
     background-color: rgba(13, 43, 67, 0.8);
-
-    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
 }
 
 
@@ -357,6 +352,7 @@ Button {
     font-size: 40px;
     font-weight: 100;
     line-height: 100%;
+    color: var(--main-bg-cl);
 }
 
 
@@ -384,3 +380,103 @@ Button {
     line-height: 1.2;
     color: var(--secondary-txt-cl);
 }
+
+/**
+  |============================
+  | Team styles
+  |============================
+*/
+.team {}
+
+.team-container {
+    display: flex;
+    gap: 30px;
+}
+
+.taem-img {}
+
+.team-content {
+    padding-top: 124px;
+}
+
+.team-title {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 110%;
+    color: var(--secondary-txt-cl);
+
+}
+
+.team-desc {
+    height: 108px;
+    margin-bottom: 20px;
+    color: var(--secondary-txt-cl);
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.list {}
+
+.team-iteam {}
+
+.team-iteam-img {}
+
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+    /* height: 168px; */
+    background-color: var(--secondary-bg-cl);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0;
+}
+
+.container {}
+
+.footer-contactbox {}
+
+.footer-contactbox-logo {}
+
+.header-logo {}
+
+.header-logo-link {}
+
+.link {}
+
+.header-logo-svg {}
+
+.header-logo-txt {}
+
+.footer-phone {}
+
+.footer-uppertitle {}
+
+.footer-list {}
+
+.list {}
+
+.footer-iteam {}
+
+.footer-link {}
+
+.footer-social-list {}
+
+.footer-social-iteam {}
+
+.footer-social-link {}
+
+.footer-social-svg {}
+
+.footer-desc {}
