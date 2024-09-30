@@ -47,77 +47,91 @@
     </header>
     <main>
         <!-- Hero section -->
-        <section>
-            <div class="container">
-                <div>
-                    <img src="./images/hero/hero.png" width="540" height="621" alt="birds">
-                    <h1>Репліки картин від <span>Ink. House</span></h1>
-                    <p>Висока якість відмальовки на цупкому папері або лляному полотні. Рідкісні твори, доступні ціни.
-                    </p>
-                    <button>Продукція</button>
+        <section class="hero">
+            <div class="hero-container container">
+                <div class="hero-box">
+                    <img class="hero-img" src="./images/hero/hero.png" width="540" height="621" alt="birds">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Репліки картин від <span class="hero-title-accent">Ink. House</span></h1>
+                        <p class="hero-desc">Висока якість відмальовки на цупкому папері або лляному полотні. Рідкісні твори, доступні ціни.
+                        </p>
+                        <button class="hero-btn">Продукція</button>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Catalog section -->
-        <section>
-            <div class="container">
-                <div>
-                    <h2>Репродукції</h2>
-                    <ul class="list">
-                        <li><a class="link" href="">Франція</a></li>
-                        <li><a class="link" href="">Германія</a></li>
-                        <li><a class="link" href="">Англія</a></li>
+        <section class="catalog">
+            <div class="catalog-container container">
+                <div class="catalog-box">
+                    <h2 class="catalog-box-title">Репродукції</h2>
+                    <ul class="catalog-box-list list">
+                        <li class="catalog-box-item"><a class="catalog-box-link link" href="">Франція</a></li>
+                        <li class="catalog-box-item"><a class="catalog-box-link link" href="">Германія</a></li>
+                        <li class="catalog-box-item"><a class="catalog-box-link link" href="">Англія</a></li>
                     </ul>
                 </div>
-                <div>
-                    <ul class="list">
-                        <li>
-                            <img src="./images/catalog/catalog_img1.jpeg" width="310" height="422" alt="photo cards">
-                            <p>Марсель Руссо</p>
-                            <h3>Охота Амура</h3>
-                            <p>Холст, масло (50х80)</p>
-                            <p>14 500 грн</p>
-                            <button type="button">В корзину</button>
+                <div class="catalog-content">
+                    <ul class="catalog-content-list list">
+                        <li class="catalog-content-item">
+                            <div class="catalog-content-box">
+                                <img class="catalog-img" src="./images/catalog/catalog_img1.jpeg" width="310" height="422" alt="photo cards">
+                                <p class="catalog-uppertitle">Марсель Руссо</p>
+                                <h3 class="catalog-title">Охота Амура</h3>
+                                <p class="catalog-desc">Холст, масло (50х80)</p>
+                                <p class="catalog-price">14 500 грн</p>
+                                <button class="catalog-btn" type="button">В корзину</button>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/catalog/catalog_img2.jpeg" width="310" height="422" alt="photo cards">
-                            <p>Анри Селин</p>
-                            <h3>Дама с собачкой</h3>
-                            <p>Акрил, бумага (50х80)</p>
-                            <p>16 500 грн</p>
-                            <button type="button">В корзину</button>
+                        <li class="catalog-content-item">
+                            <div class="catalog-content-box">
+                                <img class="catalog-img" src="./images/catalog/catalog_img2.jpeg" width="310" height="422" alt="photo cards">
+                                <p class="catalog-uppertitle">Анри Селин</p>
+                                <h3 class="catalog-title">Дама с собачкой</h3>
+                                <p class="catalog-desc">Акрил, бумага (50х80)</p>
+                                <p class="catalog-price">16 500 грн</p>
+                                <button class="catalog-btn" type="button">В корзину</button>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/catalog/catalog_img3.jpeg" width="310" height="422" alt="photo cards">
-                            <p>Франсуа Дюпон</p>
-                            <h3>Процедура</h3>
-                            <p>Цветная литография (40х60)</p>
-                            <p>20 000 грн</p>
-                            <button type="button">В корзину</button>
+                        <li class="catalog-content-item">
+                            <div class="catalog-content-box">
+                                <img class="catalog-img" src="./images/catalog/catalog_img3.jpeg" width="310" height="422" alt="photo cards">
+                                <p class="catalog-uppertitle">Франсуа Дюпон</p>
+                                <h3 class="catalog-title">Процедура</h3>
+                                <p class="catalog-desc">Цветная литография (40х60)</p>
+                                <p class="catalog-price">20 000 грн</p>
+                                <button class="catalog-btn" type="button">В корзину</button>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/catalog/catalog_img4.jpeg" width="310" height="422" alt="photo cards">
-                            <p>Луи Детуш</p>
-                            <h3>Роза</h3>
-                            <p>Бумага, акрил (50х80)</p>
-                            <p>12 000 грн</p>
-                            <button type="button">В корзину</button>
+                        <li class="catalog-content-item">
+                            <div class="catalog-content-box">
+                                <img class="catalog-img" src="./images/catalog/catalog_img4.jpeg" width="310" height="422" alt="photo cards">
+                                <p class="catalog-uppertitle">Луи Детуш</p>
+                                <h3 class="catalog-title">Роза</h3>
+                                <p class="catalog-desc">Бумага, акрил (50х80)</p>
+                                <p class="catalog-price">12 000 грн</p>
+                                <button class="catalog-btn" type="button">В корзину</button>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/catalog/catalog_img5.jpeg" width="310" height="422" alt="photo cards">
-                            <p>Франсуа Дюпон</p>
-                            <h3>Птичья трапеза</h3>
-                            <p>Цветная литография (40х60)</p>
-                            <p>22 500 грн</p>
-                            <button type="button">В корзину</button>
+                        <li class="catalog-content-item">
+                            <div class="catalog-content-box">
+                                <img class="catalog-img" src="./images/catalog/catalog_img5.jpeg" width="310" height="422" alt="photo cards">
+                                <p class="catalog-uppertitle">Франсуа Дюпон</p>
+                                <h3 class="catalog-title">Птичья трапеза</h3>
+                                <p class="catalog-desc">Цветная литография (40х60)</p>
+                                <p class="catalog-price">22 500 грн</p>
+                                <button class="catalog-btn" type="button">В корзину</button>
+                            </div>
                         </li>
-                        <li>
-                            <img src="./images/catalog/catalog_img6.jpeg" width="310" height="422" alt="photo cards">
-                            <p>Пьер Моранж</p>
-                            <h3>Пейзаж с рыбой</h3>
-                            <p>Цветная литография (40х60)</p>
-                            <p>20 000 грн</p>
-                            <button type="button">В корзину</button>
+                        <li class="catalog-content-item">
+                            <div class="catalog-content-box">
+                                <img class="catalog-img" src="./images/catalog/catalog_img6.jpeg" width="310" height="422" alt="photo cards">
+                                <p class="catalog-uppertitle">Пьер Моранж</p>
+                                <h3 class="catalog-title">Пейзаж с рыбой</h3>
+                                <p class="catalog-desc">Цветная литография (40х60)</p>
+                                <p class="catalog-price">20 000 грн</p>
+                                <button class="catalog-btn" type="button">В корзину</button>
+                            </div>
                         </li>
                     </ul>
                 </div>
