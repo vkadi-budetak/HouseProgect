@@ -54,13 +54,15 @@ img {
     margin: 0;
 }
 
+li:last-child {
+    margin-bottom: 0
+}
+
 Button {
     Font-family: inherit;
     Color: currentColor;
     Cursor: pointer
 }
-
-
 
 /* Reset end */
 
@@ -75,8 +77,8 @@ Button {
     Padding-left: 15px;
     Padding-right: 15px;
 
-    Outline: 2px solid red;
-    Outline-offset: -2px;
+    /* Outline: 2px solid red;
+    Outline-offset: -2px; */
 }
 
 /**
@@ -94,10 +96,6 @@ Button {
     justify-content: space-between;
     padding: 32px 0;
 }
-
-.container {}
-
-.header-logo {}
 
 .header-logo-link {
     display: flex;
@@ -117,8 +115,6 @@ Button {
     color: var(--main-svg-cl);
 }
 
-.header-nav {}
-
 .header-nav-list {
     display: flex;
     gap: 60px;
@@ -133,8 +129,6 @@ Button {
     color: var(--secondary-txt-cl);
 }
 
-.header-nav-link {}
-
 .header-nav-svg {
     fill: var(--secondary-txt-cl);
 }
@@ -144,18 +138,11 @@ Button {
   | Hero styles
   |============================
 */
-.hero {}
-
-.hero-container {}
-
-.container {}
 
 .hero-box {
     display: flex;
     gap: 30px;
 }
-
-.hero-img {}
 
 .hero-content {
     margin-top: 145px;
@@ -196,10 +183,6 @@ Button {
   |============================
 */
 
-.catalog {}
-
-.catalog-container {}
-
 .catalog-box {
     display: flex;
     justify-content: space-between;
@@ -232,8 +215,6 @@ Button {
     line-height: 1.2;
     padding: 10px 20px;
 }
-
-.catalog-content {}
 
 .catalog-content-list {
     display: flex;
@@ -333,14 +314,11 @@ Button {
     width: 50%;
 }
 
-
 .promo-container-uppertitle {
     display: flex;
     gap: 20px;
     padding: 70px 0 20px;
 }
-
-.promo-content {}
 
 .promo-svg {
     fill: rgb(238, 219, 109);
@@ -355,8 +333,6 @@ Button {
     color: var(--main-bg-cl);
 }
 
-
-
 .promo-desc {
     display: flex;
     flex-wrap: wrap;
@@ -368,8 +344,6 @@ Button {
     color: rgb(255, 255, 255);
     margin-bottom: 60px;
 }
-
-.promo-desc-part {}
 
 .promo-btn {
     width: 252px;
@@ -386,14 +360,11 @@ Button {
   | Team styles
   |============================
 */
-.team {}
 
 .team-container {
     display: flex;
     gap: 30px;
 }
-
-.taem-img {}
 
 .team-content {
     padding-top: 124px;
@@ -421,12 +392,6 @@ Button {
     gap: 30px;
 }
 
-.list {}
-
-.team-iteam {}
-
-.team-iteam-img {}
-
 /**
   |============================
   | Footer styles
@@ -443,40 +408,38 @@ Button {
     padding: 23px 0;
 }
 
-.container {}
+.footer-contactbox-logo {
+    margin-bottom: 35px;
+}
 
-.footer-contactbox {}
+.footer-phone {
+    margin-bottom: 8px;
+}
 
-.footer-contactbox-logo {}
+.footer-list-box {
+    display: flex;
+    gap: 60px;
+}
 
-.header-logo {}
+.footer-iteam {
+    margin-bottom: 6px;
+}
 
-.header-logo-link {}
+.footer-iteam:first-child {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: var(--secondary-txt-cl);
+}
 
-.link {}
+.footer-social-list {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 10px;
+}
 
-.header-logo-svg {}
-
-.header-logo-txt {}
-
-.footer-phone {}
-
-.footer-uppertitle {}
-
-.footer-list {}
-
-.list {}
-
-.footer-iteam {}
-
-.footer-link {}
-
-.footer-social-list {}
-
-.footer-social-iteam {}
-
-.footer-social-link {}
-
-.footer-social-svg {}
-
-.footer-desc {}
+.footer-desc {
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 120%;
+}
