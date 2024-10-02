@@ -129,9 +129,23 @@ Button {
     color: var(--secondary-txt-cl);
 }
 
-.header-nav-svg {
-    fill: var(--secondary-txt-cl);
+.header-nav-item:hover {
+    color: rgb(89, 141, 102);
 }
+
+.header-nav-link:focus {
+    background-color: rgb(212, 232, 217);
+}
+
+.header-nav-svg:hover {
+    fill: rgb(89, 141, 102);
+}
+
+.header-nav-svg:hover {
+    fill: rgb(89, 141, 102);
+    background-color: rgb(212, 232, 217);
+}
+
 
 /**
   |============================
@@ -177,6 +191,17 @@ Button {
     color: var(--accent-txt-cl);
 }
 
+.hero-btn:hover {
+    background-color: rgb(89, 141, 102);
+    color: rgb(244, 246, 245);
+}
+
+.hero-btn:focus {
+    background-color: rgb(212, 232, 217);
+    border: 1px solid rgb(89, 141, 102);
+    color: rgb(89, 141, 102);
+}
+
 /**
   |============================
   | Catalog styles
@@ -206,6 +231,18 @@ Button {
 .catalog-box-item {
     border-radius: 20px;
     background: var(--btn-bg-cl);
+}
+
+.catalog-box-item:hover {
+    border-radius: 20px;
+    background: rgb(89, 141, 102);
+    color: rgb(244, 246, 245);
+}
+
+.catalog-box-item:focus {
+    border: 2px solid rgb(89, 141, 102);
+    border-radius: 20px;
+    background-color: rgb(212, 232, 217);
 
 }
 
@@ -285,6 +322,18 @@ Button {
     color: var(--accent-txt-cl);
 }
 
+.catalog-btn:hover {
+    background-color: rgb(89, 141, 102);
+    color: rgb(244, 246, 245);
+}
+
+.catalog-btn:focus {
+    background-color: rgb(212, 232, 217);
+    border: 1px solid rgb(89, 141, 102);
+    color: rgb(89, 141, 102);
+}
+
+
 /**
   |============================
   | Promo styles
@@ -346,6 +395,7 @@ Button {
 }
 
 .promo-btn {
+    position: relative;
     width: 252px;
     height: 65px;
     background-color: rgb(238, 219, 109);
@@ -353,6 +403,16 @@ Button {
     font-weight: 100;
     line-height: 1.2;
     color: var(--secondary-txt-cl);
+}
+
+.promo-btn:hover {
+    background-color: rgb(250, 235, 151);
+
+}
+
+.promo-btn:focus {
+    background: rgb(250, 235, 151);
+    border: 1px solid rgb(163, 131, 20);
 }
 
 /**
@@ -425,6 +485,15 @@ Button {
     margin-bottom: 6px;
 }
 
+.footer-link:hover {
+    color: rgb(89, 141, 102);
+}
+
+.footer-link:focus {
+    background-color: rgb(212, 232, 217);
+    color: rgb(89, 141, 102);
+}
+
 .footer-iteam:first-child {
     font-size: 20px;
     font-weight: 100;
@@ -436,6 +505,15 @@ Button {
     display: flex;
     gap: 32px;
     margin-bottom: 10px;
+}
+
+.footer-social-svg:hover {
+    fill: rgb(89, 141, 102);
+}
+
+.footer-social-svg:focus {
+    background-color: rgb(212, 232, 217);
+    fill: rgb(89, 141, 102);
 }
 
 .footer-desc {
