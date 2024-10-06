@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="header-container container">
             <div class="header-logo">
@@ -55,7 +56,7 @@
                         <p class="hero-desc">Висока якість відмальовки на цупкому папері або лляному полотні. Рідкісні
                             твори, доступні ціни.
                         </p>
-                        <button class="hero-btn">Продукція</button>
+                        <button class="hero-btn" type="button" data-modal-open>Продукція</button>
                     </div>
                 </div>
             </div>
@@ -75,8 +76,14 @@
                     <ul class="catalog-content-list list">
                         <li class="catalog-content-item">
                             <div class="catalog-content-box">
-                                <img class="catalog-img" src="./images/catalog/catalog_img1.jpeg" width="310"
-                                    height="422" alt="photo cards">
+                                <div class="catalog-box-info">
+                                    <img class="catalog-img" src="./images/catalog/catalog_img1.jpeg" width="310"
+                                        height="422" alt="photo cards">
+                                    <div class="overlay">
+                                        <p class="overlay-label">Опис - Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Fugit, aspernatur?</p>
+                                    </div>
+                                </div>
                                 <p class="catalog-uppertitle">Марсель Руссо</p>
                                 <h3 class="catalog-title">Охота Амура</h3>
                                 <p class="catalog-desc">Холст, масло (50х80)</p>
@@ -86,8 +93,14 @@
                         </li>
                         <li class="catalog-content-item">
                             <div class="catalog-content-box">
-                                <img class="catalog-img" src="./images/catalog/catalog_img2.jpeg" width="310"
-                                    height="422" alt="photo cards">
+                                <div class="catalog-box-info">
+                                    <img class="catalog-img" src="./images/catalog/catalog_img2.jpeg" width="310"
+                                        height="422" alt="photo cards">
+                                    <div class="overlay">
+                                        <p class="overlay-label">Опис - Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Fugit, aspernatur?</p>
+                                    </div>
+                                </div>
                                 <p class="catalog-uppertitle">Анри Селин</p>
                                 <h3 class="catalog-title">Дама с собачкой</h3>
                                 <p class="catalog-desc">Акрил, бумага (50х80)</p>
@@ -97,8 +110,14 @@
                         </li>
                         <li class="catalog-content-item">
                             <div class="catalog-content-box">
-                                <img class="catalog-img" src="./images/catalog/catalog_img3.jpeg" width="310"
-                                    height="422" alt="photo cards">
+                                <div class="catalog-box-info">
+                                    <img class="catalog-img" src="./images/catalog/catalog_img3.jpeg" width="310"
+                                        height="422" alt="photo cards">
+                                    <div class="overlay">
+                                        <p class="overlay-label">Опис - Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Fugit, aspernatur?</p>
+                                    </div>
+                                </div>
                                 <p class="catalog-uppertitle">Франсуа Дюпон</p>
                                 <h3 class="catalog-title">Процедура</h3>
                                 <p class="catalog-desc">Цветная литография (40х60)</p>
@@ -108,8 +127,14 @@
                         </li>
                         <li class="catalog-content-item">
                             <div class="catalog-content-box">
-                                <img class="catalog-img" src="./images/catalog/catalog_img4.jpeg" width="310"
-                                    height="422" alt="photo cards">
+                                <div class="catalog-box-info">
+                                    <img class="catalog-img" src="./images/catalog/catalog_img4.jpeg" width="310"
+                                        height="422" alt="photo cards">
+                                    <div class="overlay">
+                                        <p class="overlay-label">Опис - Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Fugit, aspernatur?</p>
+                                    </div>
+                                </div>
                                 <p class="catalog-uppertitle">Луи Детуш</p>
                                 <h3 class="catalog-title">Роза</h3>
                                 <p class="catalog-desc">Бумага, акрил (50х80)</p>
@@ -119,8 +144,14 @@
                         </li>
                         <li class="catalog-content-item">
                             <div class="catalog-content-box">
-                                <img class="catalog-img" src="./images/catalog/catalog_img5.jpeg" width="310"
-                                    height="422" alt="photo cards">
+                                <div class="catalog-box-info">
+                                    <img class="catalog-img" src="./images/catalog/catalog_img5.jpeg" width="310"
+                                        height="422" alt="photo cards">
+                                    <div class="overlay">
+                                        <p class="overlay-label">Опис - Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Fugit, aspernatur?</p>
+                                    </div>
+                                </div>
                                 <p class="catalog-uppertitle">Франсуа Дюпон</p>
                                 <h3 class="catalog-title">Птичья трапеза</h3>
                                 <p class="catalog-desc">Цветная литография (40х60)</p>
@@ -130,8 +161,14 @@
                         </li>
                         <li class="catalog-content-item">
                             <div class="catalog-content-box">
-                                <img class="catalog-img" src="./images/catalog/catalog_img6.jpeg" width="310"
-                                    height="422" alt="photo cards">
+                                <div class="catalog-box-info">
+                                    <img class="catalog-img" src="./images/catalog/catalog_img6.jpeg" width="310"
+                                        height="422" alt="photo cards">
+                                    <div class="overlay">
+                                        <p class="overlay-label">Опис - Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit. Fugit, aspernatur?</p>
+                                    </div>
+                                </div>
                                 <p class="catalog-uppertitle">Пьер Моранж</p>
                                 <h3 class="catalog-title">Пейзаж с рыбой</h3>
                                 <p class="catalog-desc">Цветная литография (40х60)</p>
@@ -257,6 +294,20 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg class="modal-icon" width="20" height="20">
+                    <use href=""></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
