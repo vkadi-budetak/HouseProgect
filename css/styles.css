@@ -69,29 +69,55 @@ button {
     Cursor: pointer
 }
 
-/* Reset end */
+.page-box {
+    overflow: hidden;
+}
 
+
+/* Reset end */
 .section {
     margin-bottom: 70px;
 }
 
 .container {
-    Width: 1140px;
-    Margin-left: auto;
-    Margin-right: auto;
-    Padding-left: 15px;
-    Padding-right: 15px;
+    /* Phone styles & > */
+    min-width: 320px;
+    max-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
-    /* Outline: 2px solid red;
-    Outline-offset: -2px; */
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
+/* Tablet 510 styles & > */
+@media only screen and (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Tablet 690 styles & > */
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+/* Desktop styles & > */
+@media only screen and (min-width: 1140px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
 
 /**
   |============================
   | Header styles
   |============================
 */
-
 .header {
     position: fixed;
     width: 100%;
@@ -99,11 +125,18 @@ button {
     background-color: var(--secondary-bg-cl);
 }
 
+
+
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 32px 0;
+}
+
+.header-logo {
+    /* Phone styles & > */
+    /* padding: 17px 0; */
 }
 
 .header-logo-link {
@@ -127,7 +160,8 @@ button {
 .header-nav-list {
     display: flex;
     gap: 60px;
-    align-items: center;
+    align-items: center; 
+
 }
 
 
@@ -139,6 +173,16 @@ button {
 
     transition: color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+@media only screen and (max-width: 575px) {
+  .header-nav-item {
+    display: none;
+  }
+} 
+
+
+
+
 
 .header-nav-item:hover {
     color: rgb(89, 141, 102);
@@ -865,4 +909,75 @@ button {
     background-color: rgb(212, 232, 217);
     border: 1px solid rgb(89, 141, 102);
     color: rgb(89, 141, 102);
+}
+
+/**
+  |============================
+  | Mobile menu styles
+  |============================
+*/
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
 }
