@@ -63,10 +63,23 @@
         </header>
         <main>
             <!-- Hero section -->
-            <!-- <section class="hero">
+            <section class="hero">
                 <div class="hero-container container">
                     <div class="hero-box">
-                        <img class="hero-img" src="./images/hero/hero.png" width="540" height="621" alt="birds">
+                        <img class="hero-img"
+                            srcset="
+                            ./images/hero/Layer_195.jpeg 195w,
+                            ./images/hero/Layer_330.jpeg 330w,
+                            ./images/hero/Layer_390.jpeg 390w,
+                            ./images/hero/Layer_540.jpeg 540w,
+                            ./images/hero/Layer_660.jpeg 660w,
+                            ./images/hero/Layer_1080.jpeg 1080w,"
+                            sizes="(min-width: 1440px) 540px,(min-width: 690px) 330px, (min-width: 510px) 195px, 100vw"
+                            src="./images/hero/hero.png"
+                            width="540"
+                            height="621"
+                            alt="birds"
+                            loading="lazy">
                         <div class="hero-content">
                             <h1 class="hero-title">Репліки картин від <span class="hero-title-accent">Ink. House</span>
                             </h1>
@@ -78,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
             <!-- Catalog section -->
             <!-- <section class="catalog section">
                 <div class="catalog-container container">

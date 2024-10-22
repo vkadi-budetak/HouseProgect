@@ -182,8 +182,9 @@ button {
 }
 
 .header-nav {
-display: flex;
-cursor: pointer;
+    display: flex;
+    cursor: pointer;
+    order: 2;
 }
 
 
@@ -195,16 +196,16 @@ cursor: pointer;
 }
 
 @media only screen and (min-width: 576px) {
-  .header-nav-list {
-    margin-right: 131px;
-  }
-} 
+    .header-nav-list {
+        margin-right: 131px;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     .header-nav-list {
-      margin-right: 60px;
+        margin-right: 60px;
     }
-  } 
+}
 
 .header-nav-item {
     font-size: 20px;
@@ -289,14 +290,48 @@ cursor: pointer;
     gap: 30px;
 }
 
-.hero-content {
-    margin-top: 145px;
+@media only screen and (max-width: 575px) {
+    .hero-img {
+        display: none;
+    }
 }
 
+@media only screen and (min-width: 690px) {
+    .hero-content {
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hero-content {
+        margin-top: 145px;
+    }
+}
+
+
 .hero-title {
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 100;
-    line-height: 110%;
+    line-height: 100%;
+}
+
+@media only screen and (min-width: 510px) {
+    .hero-title {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 690px) {
+    .hero-title {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hero-title {
+        font-size: 60px;
+        line-height: 110%;
+    }
 }
 
 .hero-title-accent {
@@ -959,7 +994,8 @@ cursor: pointer;
 */
 
 .header-box-button {
-display: flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu-toggle {
@@ -986,11 +1022,6 @@ display: flex;
 .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
-}
-
-.position-menu {
-    position: absolute;
-    margin: auto;
 }
 
 .menu-container {
