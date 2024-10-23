@@ -123,13 +123,14 @@ button {
     position: fixed;
     width: 100%;
     z-index: var(--header-idx);
+    background-color: var(--secondary-bg-cl);
 }
 
-@media only screen and (min-width: 576px) {
+/* @media only screen and (min-width: 576px) {
     .header {
         background-color: var(--secondary-bg-cl);
     }
-}
+} */
 
 .header-container {
     padding: 16px 0;
@@ -282,7 +283,19 @@ button {
 */
 
 .hero {
-    padding-top: 100px;
+    padding-top: 130px;
+}
+
+@media only screen and (min-width: 576px) {
+    .hero {
+        padding-top: 123px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        padding-top: 100px;
+    }
 }
 
 .hero-box {
@@ -296,7 +309,7 @@ button {
     }
 }
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 768px) {
     .hero-content {
         margin-top: 35px;
     }
@@ -313,15 +326,16 @@ button {
     font-size: 30px;
     font-weight: 100;
     line-height: 100%;
+    margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 510px) {
+@media only screen and (min-width: 576px) {
     .hero-title {
         font-size: 36px;
     }
 }
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 768px) {
     .hero-title {
         font-size: 40px;
     }
@@ -339,24 +353,68 @@ button {
 }
 
 .hero-desc {
-    font-size: 18px;
     font-weight: 100;
     line-height: 150%;
     margin-bottom: 60px;
 }
 
-.hero-btn {
-    width: 223px;
-    height: 65px;
-    border: 1px solid rgb(89, 141, 102);
+@media only screen and (max-width: 575px) {
+    .hero-desc {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+}
 
-    font-size: 20px;
+@media only screen and (min-width: 576px) {
+    .hero-desc {
+        font-size: 16px;
+        margin-bottom: 11px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1139px) {
+    .hero-desc {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+
+.hero-btn {
+    width: 154px;
+    height: 50px;
+    font-size: 18px;
     font-weight: 100;
     line-height: 1.2;
     background-color: transparent;
     color: var(--accent-txt-cl);
 
+    border: 1px solid rgb(89, 141, 102);
+
     transition: background-color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media only screen and (min-width: 576px) {
+    .hero-btn {
+        width: 178px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-btnc {
+        width: 210px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .hero-btnc {
+        width: 223px;
+        height: 65px;
+        font-size: 20px;
+    }
 }
 
 .hero-btn:hover {
@@ -375,13 +433,34 @@ button {
   | Catalog styles
   |============================
 */
+.catalog-container {
+    padding-top: 60px;
+}
+
+@media only screen and (min-width: 576px) {
+    .catalog-container {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .catalog-container {
+        padding-top: 70px;
+    }
+}
 
 .catalog-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-bottom: 20px;
+}
 
-    margin-bottom: 30px;
+@media only screen and (min-width: 768px) {
+    .catalog-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 30px;
+    }
 }
 
 .catalog-box-title {
@@ -391,9 +470,21 @@ button {
     color: var(--secondary-txt-cl);
 }
 
+@media only screen and (max-width: 767px) {
+    .catalog-box-title {
+        margin-bottom: 20px;
+    }
+}
+
 .catalog-box-list {
     display: flex;
     gap: 32px;
+}
+
+@media only screen and (max-width: 767px) {
+    .catalog-box-title {
+        margin-bottom: 20px;
+    }
 }
 
 .catalog-box-item {
@@ -428,13 +519,35 @@ button {
 .catalog-content-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
 .catalog-content-item {
-    width: 350px;
-    height: 730px;
+    width: 290px;
+
     background-color: var(--secondary-bg-cl);
+}
+
+@media only screen and (min-width: 576px) {
+    .catalog-content-item {
+        width: 240px;
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .catalog-content-item {
+        width: 330px;
+
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .catalog-content-item {
+        width: 350px;
+
+    }
 }
 
 .catalog-content-box {
@@ -479,20 +592,33 @@ button {
 .overlay-label {}
 
 .catalog-uppertitle {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
-    line-height: 1.2x;
+    line-height: 1.2;
 
     margin-bottom: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+    .catalog-uppertitle {
+        font-size: 18px;
+    }
+}
+
+
 .catalog-title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 100;
     line-height: 1.2;
     color: var(--secondary-txt-cl);
 
     margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+    .catalog-title {
+        font-size: 30px;
+    }
 }
 
 .catalog-desc {
@@ -505,18 +631,30 @@ button {
 
 }
 
+@media only screen and (min-width: 768px) {
+    .catalog-title {
+        font-size: 16px;
+    }
+}
+
 .catalog-price {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 100;
-    line-height: 28px;
+    line-height: 1.2;
     color: var(--accent-txt-cl);
 
     margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 768px) {
+    .catalog-price {
+        font-size: 24px;
+    }
+}
+
 .catalog-btn {
-    width: 310px;
-    height: 65px;
+    width: 250px;
+    height: 50px;
     background-color: transparent;
     box-sizing: border-box;
     border: 1px solid rgb(89, 141, 102);
@@ -527,6 +665,27 @@ button {
     color: var(--accent-txt-cl);
 
     transition: color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media only screen and (min-width: 576px) {
+    .catalog-btn {
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .catalog-btn {
+        width: 290px;
+        height: 65px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .catalog-btn {
+        width: 310px;
+        height: 65px;
+    }
 }
 
 .catalog-btn:hover {
@@ -546,12 +705,79 @@ button {
   | Promo styles
   |============================
 */
-.promo {
-    background-image: url(../images/promo/promo_fon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+/* Phone styles & > */
+@media only screen and (max-width: 575px) {
+    .promo {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/promo/img-1_mob@1x.jpeg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .promo {
+            background-image: url(../images/promo/img-1_mob@1x.jpeg);
+        }
+    }
 }
+
+/* Tablet510 styles & > */
+@media only screen and (min-width: 576px) {
+    .promo {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/promo/img-1_tablet510@1x.jpeg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .promo {
+            background-image: url(../images/promo/img-1_tablet510@2x.jpeg);
+        }
+    }
+}
+
+/* Tablet styles & > */
+@media only screen and (min-width: 768px) {
+    .promo {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/promo/img-1_tablet@1x.jpeg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .promo {
+            background-image: url(../images/promo/img-1_tablet@2x.jpeg);
+        }
+    }
+}
+
+/* Desctop styles & > */
+@media only screen and (min-width: 768px) {
+    .promo {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/promo/img-1_desctop@1x.jpeg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .promo {
+            background-image: url(../images/promo/img-1_desctop@2x.jpeg);
+        }
+    }
+}
+
 
 .promo-container {
     height: 574px;
@@ -573,7 +799,14 @@ button {
 .promo-container-uppertitle {
     display: flex;
     gap: 20px;
-    padding: 70px 0 20px;
+    padding: 50px 0 15px;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .promo-container-uppertitle {
+        padding: 70px 0 20px;
+    }
 }
 
 .promo-content {
@@ -587,28 +820,63 @@ button {
 .promo-title {
     width: 421px;
     height: 80px;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 100;
     line-height: 100%;
     color: var(--main-bg-cl);
 }
 
+@media only screen and (min-width: 768px) {
+    .promo-title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .promo-title {
+        font-size: 40px;
+    }
+}
+
 .promo-desc {
     display: flex;
     flex-wrap: wrap;
-    width: 540px;
-    height: 209px;
-    font-size: 18px;
+    width: 290px;
+
+    /* height: 209px; */
+    font-size: 16px;
     font-weight: 100;
     line-height: 150%;
     color: rgb(255, 255, 255);
     margin-bottom: 60px;
 }
 
+@media only screen and (min-width: 576px) {
+    .promo-desc {
+        width: 510px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .promo-desc {
+        width: 690px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .promo-desc {
+        width: 540px;
+    }
+}
+
+
 .promo-btn {
     position: relative;
-    width: 252px;
-    height: 65px;
+    width: 290px;
+    height: 50px;
+
+
     background-color: rgb(238, 219, 109);
     font-size: 20px;
     font-weight: 100;
@@ -616,6 +884,26 @@ button {
     color: var(--secondary-txt-cl);
 
     transition: background-color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94), color 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media only screen and (min-width: 576px) {
+    .promo-btn {
+        width: 190px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .promo-btn {
+        width: 210px;
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .promo-btn {
+        width: 252px;
+        height: 65px;
+    }
 }
 
 .promo-btn:hover {
