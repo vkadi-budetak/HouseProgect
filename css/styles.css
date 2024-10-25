@@ -88,8 +88,8 @@ button {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
 
 /* Tablet 510 styles & > */
@@ -942,10 +942,8 @@ button {
 @media only screen and (min-width: 1140px) {
     .team-content {
         padding-top: 124px;
-
     }
 }
-
 
 .team-title {
     margin-bottom: 20px;
@@ -975,12 +973,19 @@ button {
   .team-desc {
     font-size: 18px;
   }
-}
+}  
 
 .team-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  .team-list {
+    justify-content: center;
+    gap: 25px;
+  }
 }
 
 /**
@@ -1010,6 +1015,11 @@ button {
 .footer-list-box {
     display: flex;
     gap: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .footer-list-box {
+    display: none;
+  }
 }
 
 .footer-iteam {
@@ -1102,7 +1112,7 @@ button {
     transform: translate(-50%, -50%) rotate(0) scale(1);
     opacity: 1;
 
-    width: 450px;
+    width: 290px;
     min-height: 550px;
     padding: 24px;
 
@@ -1112,6 +1122,12 @@ button {
 
     transition: transform 400ms ease-in 200ms, opacity 400ms ease-in 200ms;
 }
+@media only screen and (min-width: 576px) {
+  .modal {
+    width: 450px;
+  }
+}
+
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
@@ -1352,7 +1368,7 @@ button {
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: var(--main-bg-cl);
     z-index: 999;
 
     transform: translateX(100%);
@@ -1376,10 +1392,11 @@ button {
     list-style: none;
 }
 
+
 .mobile-menu .link {
     display: block;
     padding: 10px;
-    color: #fff;
+    color: var(--accent-txt-cl);
     text-decoration: none;
 }
 
